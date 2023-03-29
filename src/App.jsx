@@ -2,8 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { LoginUser } from './components/LoginUser';
-import { LoginUserPage } from './pages/loginUserPage';
+import {LoginUserPage} from './pages/LoginUserPage'
 
 
 function App() {
@@ -12,12 +11,9 @@ function App() {
   
   return (
     <>
-      <LoginUserPage/>
-
+      <h1>HOLA</h1>
+      <LoginUserPage></LoginUserPage>
     </>
-  
-
-    
   )
 }
 
