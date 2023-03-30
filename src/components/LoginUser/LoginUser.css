@@ -1,7 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 .login-user-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 17rem;
+    text-align: center;
+    color: black;
+    font-size: 1.1rem;
+}
 
+
+.login-user-container p{
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.login-user-container img{
+    height: 9rem;
+    width: 9rem;
+    object-fit: cover;
+
+}
+
+.loginButton{
+    background: #096085;
+    color: black;
+    font-weight: bold;
+    width: 9rem;
+}
+
+.inputs{
+    border-radius: 8px;
+    background: white;
+    border-color: white;
+    height: 22px;
+    
+
+}
+#forget-psw{
+    text-align: left;
+    font-size: 0.9rem ;
 }

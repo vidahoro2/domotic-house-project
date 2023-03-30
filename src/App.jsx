@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { LoginUserPage } from './pages/loginUserPage';
-import React from 'react';
+import {LoginUserPage} from './pages/LoginUserPage'
 
 
 function App() {
@@ -10,12 +9,11 @@ function App() {
   
   return (
     <>
-      <LoginUserPage/>
-
-    </>
-  
-
     
+      <LoginUserPage/>
+    
+      
+    </>
   )
 }
 
