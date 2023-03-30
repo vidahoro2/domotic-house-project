@@ -1,8 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans'); */
 .landing-page{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, 
-             #096085 0%,
-             #FFFFFF 100%, 
-             #096085 100%);
+    background: #FFFF;
 }
+.landing-page main{
+    width:100%;
+    height: calc(95vh - 200px);
+    background-color: white;
+    box-sizing: border-box;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.landing-page main h2,p{
+    margin: 0;
+    padding: 0;
+}
+.landing-page footer{
+    height: 5vh;
+    background:linear-gradient(to top,#096085 40%,#ffffff 100%);
+    
+}
+.title-card-one{
+    font-family: Josefin Sans;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+.paragraph-card{
+    font-family: Josefin Sans;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 20px;
+}
+.title-card-two{
+    font-family: Josefin Sans;
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+.card-input{
+    font-family: Josefin Sans;
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #096085;
+    color: black;
+}
+.card-figure{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.card-figure img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+    

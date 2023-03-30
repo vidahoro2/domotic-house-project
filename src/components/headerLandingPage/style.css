@@ -5,9 +5,12 @@
 
 .header-landing-page{
     width: 100vw;
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: row;
+    background: linear-gradient(to bottom, 
+    #096085 60%,
+    #ffffff 100%);
 }
 .figure-conntainer{
     width: 50%;
@@ -16,8 +19,8 @@
     align-items: center;
 }
 .figure-conntainer figure{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-left: 50px;
 }
 .figure-conntainer img{
@@ -38,6 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
     color: black;
 }
 .sesion-container figure{

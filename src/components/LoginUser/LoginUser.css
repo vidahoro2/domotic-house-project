@@ -7,21 +7,21 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 17rem;
+    width: 30rem;
     text-align: center;
     color: black;
-    font-size: 1.1rem;
+    font-size: 2rem;
 }
 
 
 .login-user-container p{
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .login-user-container img{
-    height: 9rem;
-    width: 9rem;
+    height: 15rem;
+    width: 15rem;
     object-fit: cover;
 
 }
@@ -30,7 +30,8 @@
     background: #096085;
     color: black;
     font-weight: bold;
-    width: 9rem;
+    padding: 5px 1px;
+    width: 15rem;
 }
 
 .inputs{
@@ -43,5 +44,6 @@
 }
 #forget-psw{
     text-align: left;
-    font-size: 0.9rem ;
+    font-size: 1.5rem ;
+    padding: 4px 0;
 }
