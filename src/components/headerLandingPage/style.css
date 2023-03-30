@@ -1,0 +1,52 @@
+.header-landing-page figure,img{
+    margin: 0;
+    padding: 0;
+}
+
+.header-landing-page{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+.figure-conntainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.figure-conntainer figure{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+.figure-conntainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sesion-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.sesion-container a{
+    margin-top: 20px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.sesion-container figure{
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+}
+.sesion-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

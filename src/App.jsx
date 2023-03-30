@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {LoginUserPage} from './pages/LoginUserPage'
+import { LandingPage } from './pages/LandingPage'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       <h1>HOLA</h1>
       <LoginUserPage></LoginUserPage>
+      <LandingPage/>
     </>
   )
 }
