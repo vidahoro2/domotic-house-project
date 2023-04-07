@@ -9,7 +9,7 @@ function LoginUser(){
         <div className="login-user-container" >
                 
                 <div>
-                <img src="https://i.pinimg.com/originals/54/4a/52/544a52d2dfbe303094049ccc5d4f53b4.png" /> 
+                <img src="/src/assets/Logo.png" /> 
                 </div>
                 
             <p> Login </p>

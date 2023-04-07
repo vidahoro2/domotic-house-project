@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+
+h2{
+    font-size: 4rem;
+}
+.register-form-container{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 62.5%;
+
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.first-column-container, .second-column-container{
+
+    width: 50%;
+}
+.form-label{
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 2.4rem;
+}
+input{
+    height: 2rem;
+    width: 47%;
+    border-radius: 5px;
+    border-style: solid 1px gray;
+    background: white;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+#submit-button{
+    width: 18rem;
+    height: 5rem;
+    background: #CBE6FF;
+    font-size: 2rem;
+    color: black;
+    border-radius: 15px;
+}
