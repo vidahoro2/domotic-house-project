@@ -1,0 +1,28 @@
+html{
+    font-size: 62.5%;
+}
+.second-menu-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.sm-button{
+    background: #CBE6FF;
+    border-radius: 70px;
+    height: 40px;
+    cursor: pointer;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sm-button:hover{
+    background: #92CBFF;
+
+}
+.sm-button p{
+    text-align: center;
+    font-size: 1.6rem;
+    color: black;
+}

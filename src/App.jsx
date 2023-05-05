@@ -3,6 +3,9 @@ import './App.css'
 import {LoginUserPage} from './pages/LoginUserPage'
 import { LandingPage } from './pages/LandingPage'
 import { RegisterFormPage } from './pages/RegisterFormPage'
+import ReactDOM from 'react-dom/client'
+
+
 
 
 function App() {
@@ -10,11 +13,12 @@ function App() {
 
   
   return (
+    
+      
     <>
-      {/* <LoginUserPage/>
-      <LandingPage/> */}
-      <RegisterFormPage/>
+        <LandingPage/>
     </>
+
   )
 }
 

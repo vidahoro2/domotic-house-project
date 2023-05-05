@@ -13,7 +13,7 @@ function RegisterFormPage(){
 
             <HeaderLandingPage></HeaderLandingPage>
             <Main>
-                <RegisterForm></RegisterForm>
+                <RegisterForm ></RegisterForm>
             </Main>
             <footer></footer>
         </>

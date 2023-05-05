@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css"
+import {Link} from "react-router-dom"
 
 function HeaderLandingPage(){
     return(
@@ -13,6 +14,7 @@ function HeaderLandingPage(){
                 <a>INICIAR SESIÓN</a>
                 <figure>
                     <img src="/src/assets/userLogo.png"></img>
+                    
                 </figure>
             </div>
         </header>

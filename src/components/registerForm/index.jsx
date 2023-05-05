@@ -2,13 +2,13 @@ import React from "react";
 import "./registerForm.css"
 
 
-function RegisterForm(){
+function RegisterForm({title="¡Bienvenido!",action="¡Registrate!"}){
     return(
 
         <>
         
         <div className="register-form-container">
-            <h2>¡Bienvenido!</h2>
+            <h2>{title}</h2>
             
             <div >
                 <form className="form" >
@@ -39,7 +39,7 @@ function RegisterForm(){
                         <input type="password" id="password"></input>
 
                         <div className="button-container">
-                            <button id="submit-button" type="submit">¡Registrarte!</button>
+                            <button id="submit-button" type="submit">{action}</button>
                         </div>
                         
                     </div>
