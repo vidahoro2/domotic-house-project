@@ -1,4 +1,5 @@
 import express from 'express';//import express, framework for backend server
+import cors from 'cors';
 import { PORT } from './config.js';//import the PORT from the archive config.js
 import { pool } from './db.js';
 import session from 'express-session';
@@ -15,6 +16,9 @@ const app = express();//save the framework at the local
 
 
 //MIDDLEWARES
+app.use(cors({
+    origin: 'http://localhost:5173'
+}));
 app.use(session({
     secret: 'domotic-house-session',
     resave: false,
@@ -26,7 +30,7 @@ app.use(session({
         password: '',
         database: 'db_domotic_house'
     })
-}))
+}));
 
 app.use(express.json());//process data client in JSON format
 app.use(passport.initialize());
