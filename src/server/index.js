@@ -3,13 +3,16 @@ import { PORT } from './config.js';//import the PORT from the archive config.js
 import { pool } from './db.js';
 import session from 'express-session';
 import MySQLStoreModule from 'express-mysql-session';
+import passport from 'passport';
 const MySQLStore = MySQLStoreModule(session);
 
 //ROUTES
 import indexRoutes from './routes/index.routes.js';
 import userRoutes from './routes/users.routes.js';
 
+//INITIALIZATIONS
 const app = express();//save the framework at the local
+
 
 //MIDDLEWARES
 app.use(session({
@@ -26,6 +29,8 @@ app.use(session({
 }))
 
 app.use(express.json());//process data client in JSON format
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(indexRoutes);
 app.use(userRoutes);
