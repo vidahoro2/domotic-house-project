@@ -1,5 +1,16 @@
+import passport from 'passport';
+import { Strategy as LocalStrategy } from 'passport-local';
 import { pool } from "../db.js";
 import { encryptPassword, matchPassword } from "../lib/helpers.js";
+
+//This function is for know is the user is logging correctly
+export const getLogin = passport.use('local.signin', new LocalStrategy({
+  username: 'username',
+  password: 'password',
+  passReqToCallback: true
+}, async(req, username, password, done) => {
+  console.log(req.body);
+}));
 
 export const getUsers = async (req, res) => {
   try {

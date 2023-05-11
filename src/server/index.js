@@ -23,22 +23,17 @@ app.use(session({
     secret: 'domotic-house-session',
     resave: false,
     saveUninitialized: false,
-    store: new MySQLStore({
-        host: 'localhost',
-        port: 3306,
-        user: 'root',
-        password: '',
-        database: 'db_domotic_house'
-    })
+    store: new MySQLStore(pool)
 }));
 
 app.use(express.json());//process data client in JSON format
 app.use(passport.initialize());
 app.use(passport.session());
 
+//Routes
 app.use(indexRoutes);
 app.use(userRoutes);
 
-
+//START THE SERVER
 app.listen(PORT);//port for the backend server
 console.log(`Server listening on port ${PORT}`); 
