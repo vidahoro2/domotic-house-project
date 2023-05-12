@@ -17,6 +17,7 @@ const app = express();//save the framework at the local
 
 //MIDDLEWARES
 app.use(cors({
+    //es el servidor que se va a conectar se pueden conectar más o todos si no se pone nada dentro de cors dejando la linea de codigo como app.use(cors());
     origin: 'http://localhost:5173'
 }));
 app.use(session({
