@@ -4,13 +4,29 @@ import { pool } from "../db.js";
 import { encryptPassword, matchPassword } from "../lib/helpers.js";
 
 //This function is for know is the user is logging correctly
-export const getLogin = passport.use('local.signin', new LocalStrategy({
+export const getLogin = async (req, res)=>{
+  const { email, password } = req.body;
+  const [result] = await pool.query('SELECT * FROM users WHERE email = ?', [email]);
+  if(result.length > 0){
+    const user = result[0];
+    const validPassword = await matchPassword(password, user.password);
+    if(validPassword){
+      console.log(user);
+    }else{
+      console.log('Incorrect password');
+    }
+  }else{
+    return console.log('Username does not exit');
+  }
+};
+/*
+passport.use('local.signin', new LocalStrategy({
   username: 'username',
   password: 'password',
   passReqToCallback: true
 }, async(req, username, password, done) => {
   console.log(req.body);
-}));
+}));*/
 
 export const getUsers = async (req, res) => {
   try {
@@ -20,6 +36,7 @@ export const getUsers = async (req, res) => {
     return res.status(500).json({ message: err.message });
   }
 };
+
 export const getUser = async (req, res) => {
   try {
     const [result] = await pool.query("SELECT * FROM users WHERE id = ?", [
@@ -34,6 +51,7 @@ export const getUser = async (req, res) => {
     return res.status(500).json({ message: err.message });
   }
 };
+
 export const insertUser = async (req, res) => {
   try {
     let { fullname, address, phone, email, username, password } = req.body;
