@@ -31,7 +31,9 @@ function LoginUser() {
         }}  
         >
           {({handleChange, handleSubmit, values, isSubmitting})=>(
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} className="login-form">
+            
+            <div>
             <p> Login </p>
             <input
               className="user-name inputs"
@@ -51,6 +53,8 @@ function LoginUser() {
               value={values.password}
             />
             <p id="forget-psw"> ¿Olvidaste tu contraseña?</p>
+            
+            </div>
             <div>
               <button id="submit-button" type="submit" className="loginButton" disabled={isSubmitting}>
                 {isSubmitting ? "Ingresando...": "Iniciar Sesión"}

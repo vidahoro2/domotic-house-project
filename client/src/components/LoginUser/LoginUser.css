@@ -12,7 +12,11 @@
     color: black;
     font-size: 2rem;
 }
-
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .login-user-container p{
     font-weight: 900;
@@ -39,11 +43,15 @@
     background: white;
     border-color: white;
     height: 22px;
-    
+    width: 95%;
 
 }
 #forget-psw{
     text-align: left;
     font-size: 1.5rem ;
     padding: 4px 0;
+}
+#submit-button{
+    background: #096085 !important;
+
 }

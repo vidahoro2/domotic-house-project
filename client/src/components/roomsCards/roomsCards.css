@@ -1,0 +1,38 @@
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    width: calc(25% - 20px);
+    justify-self: center;
+    height: auto;
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+
+}
+.img-card{
+    object-fit: cover;
+    width: 100%;
+
+}
+.card-title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }

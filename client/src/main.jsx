@@ -10,6 +10,7 @@ import { RegisterFormPage } from './pages/RegisterFormPage';
 import { LoginUserPage } from './pages/LoginUserPage';
 import { Services } from './pages/Services';
 import { ModifyData } from './pages/ModifyData';
+import { RoomSelection } from './pages/RoomSelection';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/modify-data",
     element:<ModifyData/>
+  },
+  {
+    path:"/room-selection",
+    element:<RoomSelection/>
   },
   
 ]);
