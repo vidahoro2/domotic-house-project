@@ -15,22 +15,24 @@ function LoginUser() {
           email:"",
           password:"",
         }}
-        onSubmit={async(values, actions)=>{
-          console.log(values);
-          try {
+        onSubmit={async(values, actions)=>
+          {
+            try {
+            console.log(values);
             if(!values.email || !values.password){
-              console.log("hay campos vacios, por favor, rellene los campos.");
+              return console.log("hay campos vacios, por favor, rellene los campos.");
             }else{
-              actions.resetForm();
+              const response = await loginUserRequest(values);
+              //console.log(response);
+              //actions.resetForm();
             }
-            const response = await loginUserRequest(values);
-            console.log(response);
           } catch (error) {
             console.error(error);
           }
         }}  
         >
-          {({handleChange, handleSubmit, values, isSubmitting})=>(
+          {({ handleChange, handleSubmit,
+          values, isSubmitting })=>(
             <Form onSubmit={handleSubmit} className="login-form">
             
             <div>
@@ -41,7 +43,7 @@ function LoginUser() {
               placeholder="Insert email"
               onChange={handleChange}
               value={values.email}
-            />
+            ></input>
             <p> Password </p>
             <input
               type="password"
@@ -51,7 +53,7 @@ function LoginUser() {
               placeholder="Insert password"
               onChange={handleChange}
               value={values.password}
-            />
+            ></input>
             <p id="forget-psw"> ¿Olvidaste tu contraseña?</p>
             
             </div>

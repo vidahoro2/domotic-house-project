@@ -3,6 +3,7 @@ import passport from 'passport';
 import { Strategy as LocalStrategy } from 'passport-local';
 
 import{
+    getLogin,
     getUsers,
     getUser,
     insertUser,
@@ -22,15 +23,16 @@ const getLogin = (req, res, next) => {
 };*/
 
 
-router.get('/users', getUsers);
+//router.get('/users', getUsers);
 
-router.get('/users/:id', getUser);
+router.get('/usersapi/:id', getUser);
 
-router.post('/users', insertUser);
+router.post('/usersapi', insertUser);
 
-router.put('/users/:id', updateUser);
+router.put('/usersapi/:id', updateUser);
 
-router.delete('/users/:id', deleteUser);
+router.delete('/usersapi/:id', deleteUser);
 
+router.post('/usersapilogin', getLogin);
 
 export default router;
