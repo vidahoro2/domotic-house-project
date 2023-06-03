@@ -12,11 +12,13 @@ export const getLogin = async (req, res)=>{
     const validPassword = await matchPassword(password, user.password);
     if(validPassword){
       console.log(user);
+      res.json({success: true});
     }else{
-      console.log('Incorrect password');
+      res.json({success: false, message: 'Wrong password'});
     }
   }else{
-    return console.log('Username does not exit');
+    console.log('User does not exit');
+    res.json({success: false, message: 'User does not exist'});
   }
 };
 /*
