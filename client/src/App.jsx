@@ -6,8 +6,6 @@ import { RegisterFormPage } from './pages/RegisterFormPage'
 import ReactDOM from 'react-dom/client'
 
 
-
-
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +15,7 @@ function App() {
       
     <>
         <LandingPage/>
+        <h2>Holaa</h2>
     </>
 
   )
