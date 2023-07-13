@@ -113,7 +113,7 @@ function RegisterForm({ title = "¡Bienvenido!", action = "¡Registrate!" }) {
 
                   <div className="button-container">
                     <button id="submit-button" type="submit" disabled={isSubmitting}>
-                      {isSubmitting ? "Saving...": "Registrar"}
+                      {isSubmitting ? "Saving...": action}
                     </button>
                   </div>
                 </div>
