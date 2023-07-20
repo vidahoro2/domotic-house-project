@@ -46,12 +46,23 @@
     width: 95%;
 
 }
-#forget-psw{
+.forget-psw{
     text-align: left;
     font-size: 1.5rem ;
     padding: 4px 0;
 }
+.link{
+    color: black;
+    text-align: left;
+    font-size: 1.5rem ;
+    padding: 4px 0;
+    display: block;
+    width: 100%;
+}
 #submit-button{
     background: #096085 !important;
-
+}
+.submit-button-container{
+    display: block;
+    margin: auto;
 }

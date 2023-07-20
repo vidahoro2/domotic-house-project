@@ -2,7 +2,7 @@ import React from "react";
 import "./LoginUser.css";
 import { Form, Formik } from "formik";
 import { loginUserRequest } from "../../api/users.api";
-import { redirect } from 'react-router-dom';
+import { redirect, Link } from 'react-router-dom';
 
 function LoginUser() {
 
@@ -61,8 +61,9 @@ function LoginUser() {
                 onChange={handleChange}
                 value={values.password}
               ></input>
-              <p id="forget-psw"> ¿Olvidaste tu contraseña?</p>
-              <div>
+              <Link className="link"> ¿Olvidaste tu contraseña?</Link>
+              <Link className="link" to="/logup">Registrarse</Link>
+              <div className="submit-button-container">
                 <button
                   id="submit-button"
                   type="submit"

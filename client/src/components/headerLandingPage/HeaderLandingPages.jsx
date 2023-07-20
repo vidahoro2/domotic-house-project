@@ -11,7 +11,7 @@ function HeaderLandingPage(){
                 </figure>
             </div>
             <div className="sesion-container">
-                <a>INICIAR SESIÓN</a>
+                <Link to="/login">INICIAR SESIÓN</Link>
                 <figure>
                     <img src="/src/assets/userLogo.png"></img>
                     

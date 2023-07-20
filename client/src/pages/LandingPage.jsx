@@ -3,6 +3,7 @@ import { HeaderLandingPage } from '../components/headerLandingPage/HeaderLanding
 import { LandingPageCard } from '../components/landingPageCard/landingPageCard';
 import "./landingPage.css"
 
+
 function LandingPage(){
     return(
         <div className='landing-page'>

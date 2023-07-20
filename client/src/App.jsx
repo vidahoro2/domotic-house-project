@@ -4,21 +4,19 @@ import {LoginUserPage} from './pages/LoginUserPage'
 import { LandingPage } from './pages/LandingPage'
 import { RegisterFormPage } from './pages/RegisterFormPage'
 import ReactDOM from 'react-dom/client'
-
+import { Routes, Route } from 'react-router-dom'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  
-  return (
-    
-      
+  return (  
     <>
-        <LandingPage/>
+      <Routes>
+        <Route path='/' exaxt element={<LandingPage/>}/>
+        <Route path='/login' exaxt element={<LoginUserPage/>}/>
+        <Route path='/logup' exaxt element={<RegisterFormPage/>}/>
+      </Routes>
     </>
-
   )
 }
 
