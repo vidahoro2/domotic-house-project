@@ -6,9 +6,11 @@ function HeaderLandingPage(){
     return(
         <header className="header-landing-page">
             <div className="figure-conntainer">
-                <figure>
-                    <img src="/src/assets/Logo.png"></img>
-                </figure>
+                <Link to="/">
+                    <figure>
+                        <img src="/src/assets/Logo.png"></img>
+                    </figure>
+                </Link>
             </div>
             <div className="sesion-container">
                 <Link to="/login">INICIAR SESIÓN</Link>
