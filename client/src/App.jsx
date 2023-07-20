@@ -15,7 +15,7 @@ function App() {
       
     <>
         <LandingPage/>
-        <h2>Holaa</h2>
+
     </>
 
   )
