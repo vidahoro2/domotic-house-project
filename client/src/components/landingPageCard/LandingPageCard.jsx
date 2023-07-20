@@ -3,7 +3,7 @@ import "./landingPageCard.css"
 
 function LandingPageCard({children}){
     return(
-        <div className='card'>
+        <div className='card-landing-user-page'>
             {children}
         </div>
     )
