@@ -9,6 +9,14 @@
     width: calc(25% - 20px);
     justify-self: center;
     height: auto;
+    box-sizing: border-box;
+    padding: 15px 35px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(40, 109, 149, 0.54) 48.44%, rgba(203, 230, 255, 0.54) 100%);
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .card-image{
     display: flex;
