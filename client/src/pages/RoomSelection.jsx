@@ -5,6 +5,7 @@ import {Main} from "../components/main";
 import { RoomsCards } from "../components/roomsCards";
 import { SecondMenu } from "../components/secondMenu";
 import { RoomName } from "../components/roomName";
+import { Basicfooter } from "../components/Basicfooter/Basicfooter";
 
 function RoomSelection() {
 
@@ -23,6 +24,8 @@ function RoomSelection() {
             />
 
         </Main>
+
+        <Basicfooter/>
     </>
         
 

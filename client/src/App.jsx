@@ -6,8 +6,6 @@ import { RegisterFormPage } from './pages/RegisterFormPage'
 import ReactDOM from 'react-dom/client'
 import { Routes, Route } from 'react-router-dom'
 
-
-
 function App() {
   return (  
     <>
