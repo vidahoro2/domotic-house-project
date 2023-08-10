@@ -1,8 +1,9 @@
 import React from 'react';
 import { HeaderLandingPage } from '../components/headerLandingPage/HeaderLandingPages';
-import { LandingPageCard } from '../components/landingPageCard/landingPageCard';
-import "./landingPage.css"
+import { LandingPageCard } from '../components/landingPageCard/LandingPageCard';
+import "./landingPage.css";
 
+import RectangleImage from '../assets/Rectangle.png';
 
 function LandingPage(){
     return(
@@ -15,7 +16,7 @@ function LandingPage(){
                 </LandingPageCard>
                 <LandingPageCard>
                     <figure className='card-figure'>
-                        <img src='/src/assets/Rectangle.png'></img>
+                        <img src={RectangleImage} alt="Rectangle"></img>
                     </figure>
                     <button className='card-input'>¡INTERACTUA CON NOSTROS AQUÍ!</button>
                 </LandingPageCard>
