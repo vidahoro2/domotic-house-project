@@ -12,7 +12,7 @@ export const getLogin = async (req, res)=>{
     const validPassword = await matchPassword(password, user.password);
     if(validPassword){
       console.log(user);
-      res.json({success: true});
+      res.json({success: true, message: user});
     }else{
       res.json({success: false, message: 'Wrong password'});
     }

@@ -4,4 +4,5 @@ export const insertUserRequest = async (user) =>
   await axios.post("http://localhost:4000/usersapi", user);
 
 export const loginUserRequest = async (user) =>
-  await axios.post("http://localhost:4000/usersapilogin", user);
+  await axios.post("http://localhost:4000/usersapilogin", user)/*.then(
+    res => console.log(`Info user: ${res.data}`))*/;

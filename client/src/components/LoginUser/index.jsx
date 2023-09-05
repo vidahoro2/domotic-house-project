@@ -1,13 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import "./LoginUser.css";
 import { Form, Formik } from "formik";
 import { loginUserRequest } from "../../api/users.api";
-import { redirect, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+//import { useHistory } from 'react-router-dom';
 
 function LoginUser() {
-
+  //const history =  useHistory();
   const handleLogin = async (values, actions) => {
     try {
+      //let isLoggedIn = useState(false)
       if (!values.email || !values.password) {
         console.log("Hay campos vacíos. Por favor, rellene los campos.");
       } else {
@@ -15,9 +18,12 @@ function LoginUser() {
         const response = await loginUserRequest(values);
         // Verificar la respuesta del inicio de sesión
         if (response.data.success) {
+          //isLoggedIn = useState(true)
+          //console.log(`isLoggedIn: ${isLoggedIn}`);
           // Inicio de sesión exitoso, redirigir a la página principal
-          console.log(response.data.success);
-          //return redirect('/services');
+          console.log(response.data.message);
+          //return <redirect to ='/services' />
+          //history.push('/services')
         } else {
           console.log("Error de inicio de sesión:", response.error);
         }
