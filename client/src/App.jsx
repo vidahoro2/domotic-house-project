@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom/client'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
-  return (  
+  return (
     <>
       <Routes>
         <Route path='/' exaxt element={<LandingPage/>}/>
